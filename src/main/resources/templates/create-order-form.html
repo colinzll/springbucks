@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <body>
+        <h2>Coffee Available Today</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Coffee Id</th>
+                    <th>Coffee Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="coffee : ${coffeList}">
+                    <td th:text="${coffee.id}">1</td>
+                    <td th:text="${coffee.name}">1</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
